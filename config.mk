@@ -17,7 +17,6 @@ PRODUCT_PACKAGES += \
     AmbientPlayProvider \
     SoundPickerPrebuilt \
     WallpaperPickerGooglePrebuilt \
-    NexusLauncherPrebuilt \
     WellbeingPrebuilt \
     MarkupGoogle \
     WeatherClient
@@ -28,11 +27,6 @@ PRODUCT_PACKAGES += \
 endif
 
 TARGET_MINIMAL_APPS ?= false
-
-ifeq ($(TARGET_MINIMAL_APPS), false)
-PRODUCT_PACKAGES += \
-    NexusWallpapersStubPrebuilt2018
-endif
 
 # build.prop entrys
 PRODUCT_PROPERTY_OVERRIDES += \
